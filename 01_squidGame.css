@@ -8,7 +8,7 @@ html,
 body {
  height: 100%;
  width: 100%;
- background-image: url(../assests/sqbackground.png);
+ background-image: url(./images/sqbackground.png);
  background-size: cover;
  background-repeat: no-repeat;
  color: white;
@@ -22,7 +22,6 @@ body {
     align-items: center;
     justify-content: end;
     position: relative;
-    
 }
 
 header{
@@ -43,6 +42,8 @@ header{
     width: 100%;
     height: 100%;
     color: white;
+    /* background-color: #fff; */
+    width: fit-content;
 }
 
 ul{
@@ -90,7 +91,8 @@ ul li:hover{
 }
 .squid-game img{
     height: 70%;
-    width: 100%;
+    /* width: 100%; */
+    width: fit-content;
     /* background-color: #f3f3; */
 }
 
@@ -128,6 +130,11 @@ button{
     outline: none;
     color: white;
     font-size: 15px;
+}
+
+.squid-btn div:hover{
+    filter: drop-shadow(0px 0px 10px #dd4f8a);
+    -webkit-filter: drop-shadow(0px 0px 10px #dd4f8a);
 }
 
 .watch{
@@ -217,7 +224,7 @@ button{
     justify-content: space-evenly;
     background: linear-gradient(to bottom left, #32082d, #880d40);
     position: absolute;
-    bottom: -20%;
+    bottom: -18%;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
@@ -225,6 +232,8 @@ button{
     border-radius: 14px;
     filter: drop-shadow(0px 8px 20px #880d40);
     -webkit-filter: drop-shadow(0px 8px 20px #880d40);
+
+    margin-bottom: 4px;
 }
 
 
@@ -232,13 +241,13 @@ button{
     height: 90%;
     width: 23.3%;
     border: 1px solid red;
-    /* -webkit-border-radius: 14px;
+    -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
     border-radius: 14px;
-    overflow: hidden; */
-    /* position: relative; */
+    overflow: hidden;
+    position: relative;
 }
 
 .trailer img{
@@ -249,12 +258,13 @@ button{
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
     border-radius: 14px;
-    position: relative;
+    /* position: relative; */
 }
 
 .trailer i{
     position: absolute;
     bottom: 16%;
-    /* font-size: 100%; */
-    color: #32082d;
+    right: 6%;
+    font-size: 100%;
+    color: #ffffff;
 }
